@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #e62f4a;
+  --primary-color-dark: #bd283e;
+  --text-dark: #0c0a09;
+  --text-light: #78716c;
+  --white: #ffffff;
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+}
+
+.section__description {
+    max-width: 600px;
+    margin-bottom: 1rem;
+    color: var(--text-light);
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+.btn:hover {
+    background-color: var(--primary-color-dark);
+}
+
+img {
+  width: 100%;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+    max-width: 120px;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.footer {
+    background-color: var(--text-dark);
+}
+  
+.footer__container {
+    display: grid;
+    gap: 4rem 2rem;
+}
+  
+.footer__col .section__description {
+    margin-block: 2rem;
+}
+  
+.footer__col h4 {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--white);
+}
+  
+.footer__links {
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+}
+  
+.footer__links a {
+    color: var(--text-light);
+    transition: 0.3s;
+}
+  
+.footer__links a:hover {
+    color: var(--white);
+}
+  
+.footer__socials {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+  
+.footer__socials img {
+    max-width: 25px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+  
+.footer__socials img:hover {
+    opacity: 1;
+}
+  
+.footer__bar {
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    text-align: center;
+}
+
+@media (width > 576px) {
+    .footer__container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (width > 768px) {
+    .footer__container {
+        grid-template-columns: repeat(4, 1fr);
+      }
+}

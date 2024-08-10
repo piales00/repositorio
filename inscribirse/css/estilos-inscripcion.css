@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { /*Fondo*/
+    background-image: url("../imagenes/frontisMusitec.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.enun1{
+    color: #e62f4a;
+    text-align: center;
+    margin-top: 40px;
+}
+.enun1 #l2{
+    color: white;
+}
+
+.flex{
+    display: flex;
+}
+
+.registro {
+    width: 700px;
+    background: #000000;
+    margin: 10px auto 50px;
+    padding: 30px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+  
+.controls {
+    width: 100%;
+    background: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: #78716c;
+}
+.registro #check {
+    display: flex;
+    margin: 0 10px;
+}
+.registro #question {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+  
+.registro a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+  
+.registro a:hover {
+    color: white;
+    text-decoration: underline;
+}
+  
+.registro .registrar {
+    width: 100%;
+    background: #e62f4a;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    border-radius: 4px;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilos-inscripcion.css" />
+    <title>Musitec | Inscripción</title>
+  </head>
+
+  <body>
+    <!-- REGISTRO -->
+    <section>
+      <!-- Contenido -->
+      <div class="enun1">
+        <h1 id="l1">VACANTES LIMITADAS</h1>
+        <h1 id="l2">Cierre de Inscripciones: 05 de Julio</h1>
+      </div>
+      <form id="registrationForm" class="registro">
+        <input
+          class="controls"
+          id="nombres"
+          type="text"
+          name="nombres"
+          placeholder="Nombres*"
+          required
+        />
+        <div class="flex">
+          <input
+            class="controls"
+            id="apellidoPaterno"
+            type="text"
+            name="apellidoPaterno"
+            placeholder="Apellido Paterno*"
+            required
+          />
+          <input
+            class="controls"
+            id="apellidoMaterno"
+            type="text"
+            name="apellidoMaterno"
+            placeholder="Apellido Materno*"
+            required
+          />
+        </div>
+        <input
+          class="controls"
+          id="correo"
+          type="email"
+          name="correo"
+          placeholder="E-mail*"
+          required
+        />
+        <div class="flex">
+          <input
+            class="controls"
+            id="dni"
+            type="text"
+            name="dni"
+            placeholder="Nro. de DNI*"
+            required
+          />
+          <input
+            class="controls"
+            id="celular"
+            type="text"
+            name="celular"
+            placeholder="Celular*"
+            required
+          />
+        </div>
+        <select class="controls" name="cursos" required>
+          <option value="">Seleccione una carrera o curso*</option>
+          <option value="interpretacion">
+            Carrera - Interpretación Musical
+          </option>
+          <option value="produccion">Carrera - Producción y Composición</option>
+          <option value="pedagogia">Carrera - Pedagogía Musical</option>
+          <option value="vocal_coach">Curso - Vocal Coach</option>
+          <option value="tecnicas_grabacion">
+            Curso - Técnicas de Grabación
+          </option>
+          <option value="teoria_musical">Curso - Teoría Musical</option>
+        </select>
+        <div class="flex">
+          <input type="checkbox" name="check" id="check" required />
+          <label for="check">
+            Acepto los términos y condiciones que conllevan a dar mi información
+            personal para fines educativos.
+          </label>
+        </div>
+        <p id="question"><a href="#">Términos y condiciones</a></p>
+        <button class="registrar" type="submit">Registrar</button>
+      </form>
+      <div id="formFeedback"></div>
+    </section>
+    <!-- FIN_REGISTRO -->
+    <script src="js/code.js"></script>
+  </body>
+</html>
